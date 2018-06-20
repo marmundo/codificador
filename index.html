@@ -2,42 +2,74 @@
 <html>
 <head>
 	<title>Encode</title>
+	<meta charset="utf-8">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
 </head>
 <body>
+<div class="jumbotron">
+	<h1 class="display-3">Codificador</h1>
+</div>
 
-<section class="container">
-		    <h2 id="titulo-form">Codificar Mensagem</h2>
+<div class="container">
+			<div class="row">
+		<div class="col-md-6">
+			<form id="form-adiciona">
+			    <div class="row">
+			        <label for="mensagem">Mensagem:</label>
+			    </div>
+			    <div class="row">
+			        <textarea name="mensagem" id="mensagem" rows="10" cols="30" placeholder="Digite a mensagem a ser codificada aqui e depois o botão" class="campo"></textarea>
+			    </div>
+			    <div class="row">
+			        <button id="codifica" class="botao bto-principal">Codificar</button>
+			    </div>			
+		</div>
+			         <div class="col-md-6">
+			            <label for="mensagem-codificada">Mensagem Codificada:</label>
+			            </div>
+			            <div class="row">
+			             <textarea name="mensagem-codificada" id="mensagem-codificada" rows="10" cols="30" placeholder="Mensagem Codificada" class="campo"></textarea>
+			        </div>
+			    </form>
+			    </div>
+	</div>		    
+</div>
+
+	<div class="jumbotron">
+	<h1 class="display-3">Decodificador</h1>
+</div>
+		<div class="container">
+	
+		    <div class="row">
+		    <div class="col-md-6">
 		    <form id="form-adiciona">
-		        <div class="">
-		            <label for="mensagem">Mensagem:</label>
-		             <textarea name="mensagem" id="mensagem" rows="10" cols="30" placeholder="Mensagem" class="campo"></textarea>
-		        </div>
-		       
-		        <button id="codifica" class="botao bto-principal">Codificar</button>
-
-		         <div class="">
-		            <label for="mensagem-codificada">Mensagem Codificada:</label>
-		             <textarea name="mensagem-codificada" id="mensagem-codificada" rows="10" cols="30" placeholder="Mensagem Codificada" class="campo"></textarea>
-		        </div>
-		    </form>
-		</section>
-
-		<section class="container">
-		    <h2 id="titulo-form">Decodificar Mensagem</h2>
-		    <form id="form-adiciona">
-		        <div class="">
+		        <div class="row">
 		            <label for="mensagem">Mensagem Codificada:</label>
-		             <textarea name="mensagem_codificada" id="mensagem_codificada" rows="10" cols="30" placeholder="Mensagem Codificada" class="campo"></textarea>
 		        </div>
-		       
-		        <button id="decodifica" class="botao bto-principal">Decodificar</button>
-
-		         <div class="">
+		        <div class="row">
+		             <textarea name="mensagem_codificada" id="mensagem_codificada" rows="10" cols="30" placeholder="Digite sua Mensagem Codificada aqui e depois o botão" class="campo"></textarea>
+		        </div>
+		        <div class="row">
+		        	<button id="decodifica" class="botao bto-principal">Decodificar</button>
+				</div>
+				</div>
+				<div class="col-md-6">
+		         <div class="row">
 		            <label for="mensagem-codificada">Mensagem Decodificada:</label>
+		         </div>
+		         <div class="row">
 		             <textarea name="mensagem-decodificada" id="mensagem-decodificada" rows="10" cols="30" placeholder="Mensagem Decodificada" class="campo"></textarea>
 		        </div>
+		        </div>
 		    </form>
-		</section>
+		    </div>
+		</div>
 
 
 </body>
@@ -45,4 +77,8 @@
 <script type="text/javascript" src="js/encode.js"></script>
 <script type="text/javascript" src="js/decode.js"></script>	
 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </html>
